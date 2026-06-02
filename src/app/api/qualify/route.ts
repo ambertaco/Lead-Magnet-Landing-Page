@@ -57,7 +57,7 @@ export async function POST(request: Request) {
         // Append row: ID, Timestamp, Role, RoleOther, Revenue, Spend, Industry, IndustryOther, Pain, Timeline, Email, Website, Notes, Qualified
         await sheets.spreadsheets.values.append({
           spreadsheetId,
-          range: "Sheet1!A:N",
+          range: "Sheet1!A:A",
           valueInputOption: "RAW",
           requestBody: {
             values: [

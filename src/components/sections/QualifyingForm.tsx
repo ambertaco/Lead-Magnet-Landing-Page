@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
+import Script from "next/script";
 import { useScrollAnimation } from "@/hooks/useAnimations";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -88,6 +89,7 @@ export default function QualifyingForm() {
   const [currentStep, setCurrentStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [isQualified, setIsQualified] = useState<boolean | null>(null);
+  const [scriptLoaded, setScriptLoaded] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     role: "",
     roleOther: "",
@@ -101,6 +103,19 @@ export default function QualifyingForm() {
     website: "",
     notes: "",
   });
+
+  useEffect(() => {
+    if (isQualified && (window as any).Calendly) {
+      try {
+        (window as any).Calendly.initInlineWidget({
+          url: "https://calendly.com/taco-digital/30min-call-with-chirag?hide_gdpr_banner=1",
+          parentElement: document.getElementById("calendly-embed-container"),
+        });
+      } catch (e) {
+        console.error("Failed to initialize Calendly inline widget:", e);
+      }
+    }
+  }, [isQualified, scriptLoaded]);
 
   const updateField = useCallback(
     (field: keyof FormData, value: string) => {
@@ -193,15 +208,18 @@ export default function QualifyingForm() {
               <p className="text-lg text-text-muted mb-8">
                 Grab a time below. I&apos;ll come prepared with a custom look at your AI search visibility.
               </p>
-              {/* Calendly Inline Embed */}
-              <div className="w-full bg-surface border border-border-card rounded-2xl overflow-hidden mt-6 shadow-xl">
-                <iframe
-                  src="https://calendly.com/taco-digital/30min-call-with-chirag?hide_gdpr_banner=1&hide_landing_page_details=1&background_color=161b22&text_color=f4f6f8&primary_color=ff00a6"
-                  width="100%"
-                  height="680"
-                  frameBorder="0"
-                  className="w-full min-h-[680px]"
-                ></iframe>
+              {/* Calendly Inline Widget */}
+              <div className="w-full bg-surface border border-border-card rounded-2xl overflow-hidden mt-6 shadow-xl relative" style={{ minHeight: "700px" }}>
+                <div
+                  id="calendly-embed-container"
+                  className="w-full"
+                  style={{ minWidth: "320px", height: "700px" }}
+                />
+                <Script
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  strategy="afterInteractive"
+                  onLoad={() => setScriptLoaded(true)}
+                />
               </div>
             </div>
           ) : (

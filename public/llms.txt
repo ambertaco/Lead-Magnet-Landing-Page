@@ -1,0 +1,17 @@
+# Taco - AI Search Visibility
+> AI-assisted organic search firm that helps brands scale their organic revenue.
+
+## About
+Taco helps brands become visible in AI search results (ChatGPT, Perplexity, Google AI Overviews) and scale organic revenue. Founded by Chirag Kulkarni.
+
+## Services
+- AI Search Visibility Audits
+- Generative Engine Optimization (GEO)
+- Traditional SEO enhanced with AI workflows
+- Revenue-focused organic search programs
+
+## Industries
+B2B SaaS, eCommerce, Healthcare, Fintech
+
+## Contact
+Website: https://taco.co

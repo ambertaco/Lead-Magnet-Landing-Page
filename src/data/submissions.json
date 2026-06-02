@@ -1,0 +1,61 @@
+[
+  {
+    "id": "2awvjcaig",
+    "timestamp": "2026-06-02T03:58:37.843Z",
+    "role": "Founder",
+    "revenue": "$10M to $50M",
+    "paidSpend": "$10K to $50K / month",
+    "industry": "B2B SaaS",
+    "pain": "We get traffic and rankings but can not connect SEO to revenue",
+    "timeline": "This month",
+    "email": "test@company.com",
+    "website": "https://company.com",
+    "notes": "Test submission"
+  },
+  {
+    "id": "kel6ka9qa",
+    "timestamp": "2026-06-02T03:58:43.146Z",
+    "role": "Founder",
+    "revenue": "Under $1M",
+    "paidSpend": "$10K to $50K / month",
+    "industry": "B2B SaaS",
+    "pain": "Rising CAC",
+    "timeline": "This month",
+    "email": "unqualified@company.com",
+    "website": "https://unqualified.com",
+    "notes": "",
+    "qualified": false
+  },
+  {
+    "id": "y00cpks0o",
+    "timestamp": "2026-06-02T04:18:20.629Z",
+    "role": "Head of Growth / Demand Gen",
+    "roleOther": "",
+    "revenue": "$50M to $250M",
+    "paidSpend": "$100K+ / month",
+    "industry": "eCommerce / DTC",
+    "industryOther": "",
+    "pain": "Our paid CAC is rising and we need organic to carry more of the load.",
+    "timeline": "This quarter",
+    "email": "ddd@wfwe.co",
+    "website": "lknwdklwe.com",
+    "notes": "wecwec",
+    "qualified": true
+  },
+  {
+    "id": "fwt95tvrj",
+    "timestamp": "2026-06-02T04:19:07.501Z",
+    "role": "Founder / CEO",
+    "roleOther": "",
+    "revenue": "Under $1M",
+    "paidSpend": "$10K to $50K / month",
+    "industry": "Fintech",
+    "industryOther": "",
+    "pain": "Our paid CAC is rising and we need organic to carry more of the load.",
+    "timeline": "This month, it's a priority",
+    "email": "onwnffowe@gkwneg.com",
+    "website": "kwneeow.com",
+    "notes": "erbe",
+    "qualified": false
+  }
+]

@@ -193,17 +193,15 @@ export default function QualifyingForm() {
               <p className="text-lg text-text-muted mb-8">
                 Grab a time below. I&apos;ll come prepared with a custom look at your AI search visibility.
               </p>
-              {/* Calendar embed placeholder */}
-              <div className="bg-surface border border-border-card rounded-2xl p-8 md:p-12">
-                <p className="text-text-muted text-sm mb-4">
-                  [Calendar embed: Insert Cal.com / Calendly URL here]
-                </p>
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 text-lg"
-                >
-                  Pick a time →
-                </a>
+              {/* Calendly Inline Embed */}
+              <div className="w-full bg-surface border border-border-card rounded-2xl overflow-hidden mt-6 shadow-xl">
+                <iframe
+                  src="https://calendly.com/taco-digital/30min-call-with-chirag?hide_gdpr_banner=1&hide_landing_page_details=1"
+                  width="100%"
+                  height="680"
+                  frameBorder="0"
+                  className="w-full min-h-[680px]"
+                ></iframe>
               </div>
             </div>
           ) : (

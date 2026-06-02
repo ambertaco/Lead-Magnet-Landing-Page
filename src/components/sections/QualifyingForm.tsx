@@ -196,7 +196,7 @@ export default function QualifyingForm() {
               {/* Calendly Inline Embed */}
               <div className="w-full bg-surface border border-border-card rounded-2xl overflow-hidden mt-6 shadow-xl">
                 <iframe
-                  src="https://calendly.com/taco-digital/30min-call-with-chirag?hide_gdpr_banner=1&hide_landing_page_details=1"
+                  src="https://calendly.com/taco-digital/30min-call-with-chirag?hide_gdpr_banner=1&hide_landing_page_details=1&background_color=161b22&text_color=f4f6f8&primary_color=ff00a6"
                   width="100%"
                   height="680"
                   frameBorder="0"

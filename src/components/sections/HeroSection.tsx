@@ -6,7 +6,7 @@ interface HeroSectionProps {
   eyebrow?: string;
   title?: string;
   notionUrl?: string;
-  buttonText?: string;
+  buttonText?: React.ReactNode;
 }
 
 export default function HeroSection({

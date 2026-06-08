@@ -19,7 +19,13 @@ export default function PlaybookPage() {
           eyebrow="Your Playbook is ready"
           title="Here's your AI Search Playbook."
           notionUrl={playbookUrl}
-          buttonText="Click here to get access to the Playbook document"
+          buttonText={
+            <span className="text-center block leading-tight py-1">
+              Click here to get access to the
+              <br />
+              AI Search Playbook.
+            </span>
+          }
         />
         <CredibilityBar />
         <ProblemSection />

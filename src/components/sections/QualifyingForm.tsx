@@ -84,7 +84,13 @@ const DECISION_MAKER_ROLES = [
 
 const TOTAL_STEPS = 9;
 
-export default function QualifyingForm() {
+interface QualifyingFormProps {
+  unqualifiedRedirectUrl?: string;
+}
+
+export default function QualifyingForm({
+  unqualifiedRedirectUrl = "https://innate-target-ea7.notion.site/The-AI-Search-Visibility-Audit-72a6f3cac0cf8372bd5301530bd5436c?pvs=74"
+}: QualifyingFormProps) {
   const sectionRef = useScrollAnimation();
   const [currentStep, setCurrentStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -237,15 +243,19 @@ export default function QualifyingForm() {
               </p>
               <div className="bg-surface border border-border-card rounded-2xl p-8 md:p-10">
                 <p className="text-text-muted text-sm mb-6 leading-relaxed">
-                  In the meantime, you can access the Notion AI Search Visibility Audit template below to start auditing your own search presence:
+                  {unqualifiedRedirectUrl.includes("Playbook")
+                    ? "In the meantime, you can access the Notion AI Search Playbook template below to start optimizing your search presence:"
+                    : "In the meantime, you can access the Notion AI Search Visibility Audit template below to start auditing your own search presence:"}
                 </p>
                 <a
-                  href={AUDIT_URL}
+                  href={unqualifiedRedirectUrl}
                   target="_blank"
                   rel="noopener"
                   className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 text-lg"
                 >
-                  Open the AI Search Visibility Audit
+                  {unqualifiedRedirectUrl.includes("Playbook")
+                    ? "Open the AI Search Playbook"
+                    : "Open the AI Search Visibility Audit"}
                 </a>
               </div>
             </div>

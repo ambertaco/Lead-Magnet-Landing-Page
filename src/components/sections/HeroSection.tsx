@@ -2,7 +2,19 @@
 
 import { useScrollTo } from "@/hooks/useAnimations";
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  eyebrow?: string;
+  title?: string;
+  notionUrl?: string;
+  buttonText?: string;
+}
+
+export default function HeroSection({
+  eyebrow = "Your Audit document is ready",
+  title = "Here's your AI Search Visibility Audit.",
+  notionUrl = "https://innate-target-ea7.notion.site/The-AI-Search-Visibility-Audit-72a6f3cac0cf8372bd5301530bd5436c?pvs=74",
+  buttonText = "Click here to get access to the Audit document"
+}: HeroSectionProps) {
   const scrollTo = useScrollTo();
 
   return (
@@ -18,20 +30,20 @@ export default function HeroSection() {
           {/* Left: resource */}
           <div className="flex-1">
             <p className="uppercase tracking-[0.2em] text-[13px] text-accent font-semibold mb-4">
-              Your Audit document is ready
+              {eyebrow}
             </p>
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-text-primary leading-[1.15] mb-4">
-              Here&apos;s your AI Search Visibility Audit.
+              {title}
             </h1>
 
             <div className="flex flex-wrap gap-3 mb-4">
               <a
-                href="https://innate-target-ea7.notion.site/The-AI-Search-Visibility-Audit-72a6f3cac0cf8372bd5301530bd5436c?pvs=74"
+                href={notionUrl}
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
               >
-                Click here to get access to the Audit document
+                {buttonText}
               </a>
             </div>
           </div>

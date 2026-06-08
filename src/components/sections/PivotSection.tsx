@@ -3,7 +3,20 @@
 import { useScrollTo } from "@/hooks/useAnimations";
 import { useScrollAnimation } from "@/hooks/useAnimations";
 
-export default function PivotSection() {
+interface PivotSectionProps {
+  headline?: string;
+  paragraphs?: string[];
+}
+
+export default function PivotSection({
+  headline = "You've got the audit. Here's the honest truth about it.",
+  paragraphs = [
+    "That audit is the real thing. If you work through all ten points, you'll know more about your AI search position than most companies in your category.",
+    "But I also know how this goes: you're a busy operator, the tab stays open, and the audit never gets run.",
+    "So here's the offer. Give me 15 minutes and my team will run all ten points on your brand and your competitors, then hand you a prioritized list of exactly what to fix first.",
+    "Your buyers are already asking AI which brand to choose. Right now, it probably isn't naming you. Let's change that."
+  ]
+}: PivotSectionProps) {
   const scrollTo = useScrollTo();
   const sectionRef = useScrollAnimation();
 
@@ -15,28 +28,15 @@ export default function PivotSection() {
         </p>
 
         <h2 className="font-display text-3xl md:text-4xl font-bold text-text-primary mb-8 animate-on-scroll">
-          You&apos;ve got the audit. Here&apos;s the honest truth about it.
+          {headline}
         </h2>
 
         <div className="space-y-4 mb-10 animate-on-scroll">
-          <p className="text-lg text-text-muted leading-relaxed">
-            That audit is the real thing. If you work through all ten points,
-            you&apos;ll know more about your AI search position than most
-            companies in your category.
-          </p>
-          <p className="text-lg text-text-muted leading-relaxed">
-            But I also know how this goes: you&apos;re a busy operator, the tab
-            stays open, and the audit never gets run.
-          </p>
-          <p className="text-lg text-text-muted leading-relaxed">
-            So here&apos;s the offer. Give me 15 minutes and my team will run
-            all ten points on your brand and your competitors, then hand you a
-            prioritized list of exactly what to fix first.
-          </p>
-          <p className="text-lg text-text-muted leading-relaxed">
-            Your buyers are already asking AI which brand to choose. Right now,
-            it probably isn&apos;t naming you. Let&apos;s change that.
-          </p>
+          {paragraphs.map((p, i) => (
+            <p key={i} className="text-lg text-text-muted leading-relaxed">
+              {p}
+            </p>
+          ))}
         </div>
 
         <button

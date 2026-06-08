@@ -10,7 +10,7 @@ import FAQSection from "@/components/sections/FAQSection";
 
 export default function PlaybookPage() {
   const playbookUrl =
-    "https://innate-target-ea7.notion.site/AI-Search-Playbook-2b16f3cac0cf8a6baa8c64d701fda8e";
+    "https://innate-target-ea7.notion.site/AI-Search-Playbook-2b16f3cac0cf80a6baa8c64d701fda8e";
 
   return (
     <>

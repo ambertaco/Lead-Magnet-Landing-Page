@@ -24,6 +24,14 @@ export const RESOURCES: ResourceLink[] = [
     category: "funnel",
   },
   {
+    title: "Healthcare AI Visibility Checklist Landing Page",
+    description:
+      "Campaign landing page with the 70-Point Healthcare AI Visibility Checklist download and funnel.",
+    url: "/Healthcare_AI_Visibility_Checklist",
+    isExternal: false,
+    category: "funnel",
+  },
+  {
     title: "10-Point AI Search Visibility Audit Document",
     description:
       "Direct Notion document containing the 10-point audit checklist.",
@@ -36,6 +44,14 @@ export const RESOURCES: ResourceLink[] = [
     description:
       "Direct Notion document containing the comprehensive AI Search Playbook.",
     url: "https://innate-target-ea7.notion.site/AI-Search-Playbook-2b16f3cac0cf80a6baa8c64d701fda8e",
+    isExternal: true,
+    category: "notion",
+  },
+  {
+    title: "70-Point Healthcare AI Visibility Checklist Document",
+    description:
+      "Direct Notion document containing the 70-point AI Visibility Checklist for Healthcare Websites.",
+    url: "https://tacochiragkulkarni.notion.site/70-Point-AI-Visibility-Checklist-for-Healthcare-Websites-f8035979c84248c98bc2e7f20051a953",
     isExternal: true,
     category: "notion",
   },

@@ -245,6 +245,8 @@ export default function QualifyingForm({
                 <p className="text-text-muted text-sm mb-6 leading-relaxed">
                   {unqualifiedRedirectUrl.includes("Playbook")
                     ? "In the meantime, you can access the Notion AI Search Playbook template below to start optimizing your search presence:"
+                    : unqualifiedRedirectUrl.includes("Checklist")
+                    ? "In the meantime, you can access the Notion AI Visibility Checklist template below to start optimizing your healthcare brand's search presence:"
                     : "In the meantime, you can access the Notion AI Search Visibility Audit template below to start auditing your own search presence:"}
                 </p>
                 <a
@@ -255,6 +257,8 @@ export default function QualifyingForm({
                 >
                   {unqualifiedRedirectUrl.includes("Playbook")
                     ? "Open the AI Search Playbook"
+                    : unqualifiedRedirectUrl.includes("Checklist")
+                    ? "Open the AI Visibility Checklist"
                     : "Open the AI Search Visibility Audit"}
                 </a>
               </div>

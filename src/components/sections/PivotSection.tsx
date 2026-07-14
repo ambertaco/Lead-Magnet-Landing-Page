@@ -6,6 +6,7 @@ import { useScrollAnimation } from "@/hooks/useAnimations";
 interface PivotSectionProps {
   headline?: string;
   paragraphs?: string[];
+  hideVideoPlaceholder?: boolean;
 }
 
 export default function PivotSection({
@@ -15,7 +16,8 @@ export default function PivotSection({
     "But I also know how this goes: you're a busy operator, the tab stays open, and the audit never gets run.",
     "So here's the offer. Give me 15 minutes and my team will run all ten points on your brand and your competitors, then hand you a prioritized list of exactly what to fix first.",
     "Your buyers are already asking AI which brand to choose. Right now, it probably isn't naming you. Let's change that."
-  ]
+  ],
+  hideVideoPlaceholder = false
 }: PivotSectionProps) {
   const scrollTo = useScrollTo();
   const sectionRef = useScrollAnimation();
@@ -51,12 +53,14 @@ export default function PivotSection({
           stand.
         </p>
 
-        <div className="mt-10 bg-surface border border-border-card rounded-2xl p-8 text-center animate-on-scroll">
-          <p className="text-text-muted text-sm">
-            [Optional: 2 to 3 minute video of Chirag walking through what the
-            call covers]
-          </p>
-        </div>
+        {!hideVideoPlaceholder && (
+          <div className="mt-10 bg-surface border border-border-card rounded-2xl p-8 text-center animate-on-scroll">
+            <p className="text-text-muted text-sm">
+              [Optional: 2 to 3 minute video of Chirag walking through what the
+              call covers]
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

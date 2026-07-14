@@ -32,6 +32,14 @@ export const RESOURCES: ResourceLink[] = [
     category: "funnel",
   },
   {
+    title: "Search Conversions Video Case Study Landing Page",
+    description:
+      "Campaign landing page with the embedded case study video and qualifying call funnel.",
+    url: "/Search_Conversions_Case_Study",
+    isExternal: false,
+    category: "funnel",
+  },
+  {
     title: "10-Point AI Search Visibility Audit Document",
     description:
       "Direct Notion document containing the 10-point audit checklist.",
@@ -52,6 +60,14 @@ export const RESOURCES: ResourceLink[] = [
     description:
       "Direct Notion document containing the 70-point AI Visibility Checklist for Healthcare Websites.",
     url: "https://tacochiragkulkarni.notion.site/70-Point-AI-Visibility-Checklist-for-Healthcare-Websites-f8035979c84248c98bc2e7f20051a953",
+    isExternal: true,
+    category: "notion",
+  },
+  {
+    title: "15 to 48 Search Conversions Loom Video",
+    description:
+      "Direct Loom video case study: 15 to 48 Search Conversions and 3 to 74 AIOs in 5 Months.",
+    url: "https://www.loom.com/share/8507657907a841a8b1c9eeef2932c280",
     isExternal: true,
     category: "notion",
   },

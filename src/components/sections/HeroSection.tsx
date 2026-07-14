@@ -7,13 +7,15 @@ interface HeroSectionProps {
   title?: string;
   notionUrl?: string;
   buttonText?: React.ReactNode;
+  videoEmbedUrl?: string;
 }
 
 export default function HeroSection({
   eyebrow = "Your Audit document is ready",
   title = "Here's your AI Search Visibility Audit.",
   notionUrl = "https://innate-target-ea7.notion.site/The-AI-Search-Visibility-Audit-72a6f3cac0cf8372bd5301530bd5436c?pvs=74",
-  buttonText = "Click here to get access to the Audit document"
+  buttonText = "Click here to get access to the Audit document",
+  videoEmbedUrl
 }: HeroSectionProps) {
   const scrollTo = useScrollTo();
 
@@ -36,16 +38,27 @@ export default function HeroSection({
               {title}
             </h1>
 
-            <div className="flex flex-wrap gap-3 mb-4">
-              <a
-                href={notionUrl}
-                target="_blank"
-                rel="noopener"
-                className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
-              >
-                {buttonText}
-              </a>
-            </div>
+            {videoEmbedUrl ? (
+              <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-border-card bg-surface shadow-2xl mt-4">
+                <iframe
+                  src={videoEmbedUrl}
+                  frameBorder="0"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+            ) : (
+              <div className="flex flex-wrap gap-3 mb-4">
+                <a
+                  href={notionUrl}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
+                >
+                  {buttonText}
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Right: nudge to keep reading */}

@@ -247,6 +247,8 @@ export default function QualifyingForm({
                     ? "In the meantime, you can access the Notion AI Search Playbook template below to start optimizing your search presence:"
                     : unqualifiedRedirectUrl.includes("Checklist")
                     ? "In the meantime, you can access the Notion AI Visibility Checklist template below to start optimizing your healthcare brand's search presence:"
+                    : unqualifiedRedirectUrl.includes("loom.com")
+                    ? "In the meantime, you can watch the case study video on Loom below to see how we drive organic growth:"
                     : "In the meantime, you can access the Notion AI Search Visibility Audit template below to start auditing your own search presence:"}
                 </p>
                 <a
@@ -259,6 +261,8 @@ export default function QualifyingForm({
                     ? "Open the AI Search Playbook"
                     : unqualifiedRedirectUrl.includes("Checklist")
                     ? "Open the AI Visibility Checklist"
+                    : unqualifiedRedirectUrl.includes("loom.com")
+                    ? "Watch the Case Study Video"
                     : "Open the AI Search Visibility Audit"}
                 </a>
               </div>

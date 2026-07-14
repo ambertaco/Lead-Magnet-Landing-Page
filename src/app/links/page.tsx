@@ -119,7 +119,7 @@ export default function LinksPage() {
         {/* Direct Notion Files */}
         <div>
           <h2 className="text-xs uppercase tracking-[0.2em] text-accent font-bold mb-4">
-            Notion Source Documents
+            Source Documents & Assets
           </h2>
           <div className="space-y-4">
             {documents.map((resource) => {
@@ -142,7 +142,7 @@ export default function LinksPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-xs font-semibold text-accent hover:text-accent-hover transition-colors"
                     >
-                      Open in Notion ↗
+                      {resource.url.includes("loom.com") ? "Open Loom Video ↗" : "Open in Notion ↗"}
                     </a>
                   </div>
                   <button

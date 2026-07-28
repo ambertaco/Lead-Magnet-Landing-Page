@@ -40,6 +40,14 @@ export const RESOURCES: ResourceLink[] = [
     category: "funnel",
   },
   {
+    title: "Facebook Groups for AI Search Landing Page",
+    description:
+      "Campaign landing page with the embedded strategy walkthrough video and qualifying call funnel.",
+    url: "/FB_Groups_For_AI_Search",
+    isExternal: false,
+    category: "funnel",
+  },
+  {
     title: "10-Point AI Search Visibility Audit Document",
     description:
       "Direct Notion document containing the 10-point audit checklist.",
@@ -68,6 +76,14 @@ export const RESOURCES: ResourceLink[] = [
     description:
       "Direct Loom video case study: 15 to 48 Search Conversions and 3 to 74 AIOs in 5 Months.",
     url: "https://www.loom.com/share/8507657907a841a8b1c9eeef2932c280",
+    isExternal: true,
+    category: "notion",
+  },
+  {
+    title: "FB Groups for AI Search Loom Video",
+    description:
+      "Direct Loom walkthrough video: FB Groups for AI Search strategy guide.",
+    url: "https://www.loom.com/share/c06765bd98834da8ba23607126e044c1",
     isExternal: true,
     category: "notion",
   },

@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { useScrollTo } from "@/hooks/useAnimations";
 
+import Image from "next/image";
+
 export default function Header() {
   const scrollTo = useScrollTo();
   const [scrolled, setScrolled] = useState(false);
@@ -25,9 +27,7 @@ export default function Header() {
     >
       <div className="max-w-[1100px] mx-auto px-6 h-16 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2" aria-label="Taco home">
-          <span className="font-display text-xl font-extrabold text-text-primary tracking-tight">
-            taco
-          </span>
+          <Image src="/taco-logo.jpg" alt="Taco Logo" width={40} height={40} className="rounded" />
         </a>
 
         <div className="flex items-center gap-3">

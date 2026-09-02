@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { RESOURCES } from "@/data/links";
 
+import Image from "next/image";
+
 export default function LinksPage() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
@@ -32,8 +34,8 @@ export default function LinksPage() {
       <div className="relative z-10 max-w-[700px] w-full">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center font-display text-2xl font-black tracking-wider text-text-primary mb-3">
-            TACO<span className="text-accent">.</span>
+          <div className="inline-flex items-center justify-center mb-3">
+            <Image src="/taco-logo.jpg" alt="Taco Logo" width={48} height={48} className="rounded-lg" />
           </div>
           <h1 className="font-display text-3xl font-extrabold text-text-primary mb-3">
             Marketing Resources Directory

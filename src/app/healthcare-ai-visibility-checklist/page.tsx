@@ -33,7 +33,7 @@ export default function HealthcareChecklistPage() {
         <ResultsSection />
         <ProcessSection />
         <CallSection />
-        <QualifyingForm unqualifiedRedirectUrl={checklistUrl} />
+        <QualifyingForm />
         <FAQSection />
       </main>
     </>

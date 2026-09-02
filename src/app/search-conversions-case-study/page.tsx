@@ -39,7 +39,7 @@ export default function SearchConversionsCaseStudyPage() {
         <ResultsSection />
         <ProcessSection />
         <CallSection />
-        <QualifyingForm unqualifiedRedirectUrl={loomShareUrl} />
+        <QualifyingForm />
         <FAQSection />
       </main>
     </>

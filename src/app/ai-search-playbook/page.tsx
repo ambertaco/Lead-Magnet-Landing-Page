@@ -33,7 +33,7 @@ export default function PlaybookPage() {
         <ResultsSection />
         <ProcessSection />
         <CallSection />
-        <QualifyingForm unqualifiedRedirectUrl={playbookUrl} />
+        <QualifyingForm />
         <FAQSection />
       </main>
     </>

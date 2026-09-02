@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #F9F9F9;
-  --color-surface: #FFFFFF;
+  --color-background: #FFFFFF;
+  --color-surface: #F9F9F9;
   --color-surface-alt: #F0F4F8;
   --color-border-card: #E2E8F0;
-  --color-text-primary: #2B008F;
-  --color-text-muted: #4F4CE1;
-  --color-accent: #FF00A6;
-  --color-accent-hover: #D6008B;
+  --color-text-primary: #1A0055;
+  --color-text-muted: #2B008F;
+  --color-accent: #4F4CE1;
+  --color-accent-hover: #2B008F;
   --color-teal: #5FBDFC;
   --color-success: #4ADE80;
+  --color-pink: #FF00A6;
 
   --font-display: var(--font-inter);
   --font-body: var(--font-lato);
@@ -85,7 +86,7 @@ body {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 400px;
-  background: radial-gradient(ellipse at center, rgba(255, 0, 166, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(79, 76, 225, 0.12) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -94,11 +95,11 @@ body {
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--color-accent) !important;
-  box-shadow: 0 0 0 3px rgba(255, 0, 166, 0.15);
+  box-shadow: 0 0 0 3px rgba(79, 76, 225, 0.15);
 }
 
 /* Selection color */
 ::selection {
-  background-color: rgba(255, 0, 166, 0.3);
+  background-color: rgba(79, 76, 225, 0.3);
   color: var(--color-text-primary);
 }

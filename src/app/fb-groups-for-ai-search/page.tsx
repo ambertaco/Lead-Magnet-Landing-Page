@@ -39,7 +39,7 @@ export default function FBGroupsForAISearchPage() {
         <ResultsSection />
         <ProcessSection />
         <CallSection />
-        <QualifyingForm unqualifiedRedirectUrl={loomShareUrl} />
+        <QualifyingForm />
         <FAQSection />
       </main>
     </>

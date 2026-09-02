@@ -7,6 +7,7 @@ import ProcessSection from "@/components/sections/ProcessSection";
 import CallSection from "@/components/sections/CallSection";
 import QualifyingForm from "@/components/sections/QualifyingForm";
 import FAQSection from "@/components/sections/FAQSection";
+import Header from "@/components/sections/Header";
 
 export default function PlaybookPage() {
   const playbookUrl =
@@ -14,6 +15,7 @@ export default function PlaybookPage() {
 
   return (
     <>
+      <Header />
       <main>
         <HeroSection
           eyebrow="Your Playbook is ready"

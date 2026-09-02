@@ -8,6 +8,7 @@ import ProcessSection from "@/components/sections/ProcessSection";
 import CallSection from "@/components/sections/CallSection";
 import QualifyingForm from "@/components/sections/QualifyingForm";
 import FAQSection from "@/components/sections/FAQSection";
+import Header from "@/components/sections/Header";
 
 export default function SearchConversionsCaseStudyPage() {
   const loomShareUrl =
@@ -17,6 +18,7 @@ export default function SearchConversionsCaseStudyPage() {
 
   return (
     <>
+      <Header />
       <main>
         <HeroSection
           eyebrow="CASE STUDY VIDEO"

@@ -7,13 +7,15 @@ import ProcessSection from "@/components/sections/ProcessSection";
 import CallSection from "@/components/sections/CallSection";
 import QualifyingForm from "@/components/sections/QualifyingForm";
 import FAQSection from "@/components/sections/FAQSection";
+import Header from "@/components/sections/Header";
 
-export default function HealthcareChecklistPage() {
+export default function ChecklistPage() {
   const checklistUrl =
-    "https://tacochiragkulkarni.notion.site/70-Point-AI-Visibility-Checklist-for-Healthcare-Websites-f8035979c84248c98bc2e7f20051a953";
+    "https://innate-target-ea7.notion.site/Healthcare-AI-Search-Visibility-Checklist-38e55e54f9a04a37b3b3a32223a51f0f";
 
   return (
     <>
+      <Header />
       <main>
         <HeroSection
           eyebrow="Your Checklist is ready"

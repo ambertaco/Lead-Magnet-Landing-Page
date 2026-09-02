@@ -19,7 +19,7 @@ export const RESOURCES: ResourceLink[] = [
     title: "AI Search Playbook Landing Page",
     description:
       "LinkedIn campaign landing page with the AI Search Playbook download and funnel.",
-    url: "/AI_Search_Playbook",
+    url: "/ai-search-playbook",
     isExternal: false,
     category: "funnel",
   },
@@ -27,7 +27,7 @@ export const RESOURCES: ResourceLink[] = [
     title: "Healthcare AI Visibility Checklist Landing Page",
     description:
       "Campaign landing page with the 70-Point Healthcare AI Visibility Checklist download and funnel.",
-    url: "/Healthcare_AI_Visibility_Checklist",
+    url: "/healthcare-ai-visibility-checklist",
     isExternal: false,
     category: "funnel",
   },
@@ -35,7 +35,7 @@ export const RESOURCES: ResourceLink[] = [
     title: "Search Conversions Video Case Study Landing Page",
     description:
       "Campaign landing page with the embedded case study video and qualifying call funnel.",
-    url: "/Search_Conversions_Case_Study",
+    url: "/search-conversions-case-study",
     isExternal: false,
     category: "funnel",
   },
@@ -43,7 +43,7 @@ export const RESOURCES: ResourceLink[] = [
     title: "Facebook Groups for AI Search Landing Page",
     description:
       "Campaign landing page with the embedded strategy walkthrough video and qualifying call funnel.",
-    url: "/FB_Groups_For_AI_Search",
+    url: "/fb-groups-for-ai-search",
     isExternal: false,
     category: "funnel",
   },

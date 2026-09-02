@@ -6,50 +6,55 @@ const nextConfig: NextConfig = {
       // FB Groups redirects
       {
         source: "/fb_groups_for_ai_search",
-        destination: "/FB_Groups_For_AI_Search",
+        destination: "/fb-groups-for-ai-search",
         permanent: true,
       },
       {
-        source: "/fb-groups-for-ai-search",
-        destination: "/FB_Groups_For_AI_Search",
+        source: "/FB_Groups_For_AI_Search",
+        destination: "/fb-groups-for-ai-search",
         permanent: true,
       },
       // Playbook redirects
       {
         source: "/ai_search_playbook",
-        destination: "/AI_Search_Playbook",
+        destination: "/ai-search-playbook",
         permanent: true,
       },
       {
-        source: "/ai-search-playbook",
-        destination: "/AI_Search_Playbook",
+        source: "/AI_Search_Playbook",
+        destination: "/ai-search-playbook",
         permanent: true,
       },
       // Healthcare Checklist redirects
       {
         source: "/healthcare_ai_visibility_checklist",
-        destination: "/Healthcare_AI_Visibility_Checklist",
+        destination: "/healthcare-ai-visibility-checklist",
+        permanent: true,
+      },
+      {
+        source: "/Healthcare_AI_Visibility_Checklist",
+        destination: "/healthcare-ai-visibility-checklist",
         permanent: true,
       },
       {
         source: "/healthcare-checklist",
-        destination: "/Healthcare_AI_Visibility_Checklist",
+        destination: "/healthcare-ai-visibility-checklist",
         permanent: true,
       },
       {
         source: "/healthcare-checklist-landing-page",
-        destination: "/Healthcare_AI_Visibility_Checklist",
+        destination: "/healthcare-ai-visibility-checklist",
         permanent: true,
       },
       // Case study redirects
       {
         source: "/search_conversions_case_study",
-        destination: "/Search_Conversions_Case_Study",
+        destination: "/search-conversions-case-study",
         permanent: true,
       },
       {
-        source: "/search-conversions-case-study",
-        destination: "/Search_Conversions_Case_Study",
+        source: "/Search_Conversions_Case_Study",
+        destination: "/search-conversions-case-study",
         permanent: true,
       },
     ];
